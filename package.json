@@ -1,0 +1,19 @@
+{
+  "name": "node-sourcemap-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-index": "webpack ./index.js --devtool source-map --target node --mode production --display none",
+    "build-index-source-map-support": "webpack ./index-source-map-support.js --devtool source-map --target node --mode production --display none"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "source-map-support": "^0.5.19"
+  }
+}
